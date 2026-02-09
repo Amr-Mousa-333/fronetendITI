@@ -5,7 +5,7 @@ import Home from "./components/pages/Home.jsx";
 import ProductDetails from "./components/pages/ProductDetails.jsx";
 import About from "./components/pages/About.jsx";
 import Cart from "./components/pages/Cart.jsx";
-import Signup from "./components/pages/signup.jsx";
+import Signup from "./components/pages/Signup.jsx";
 import Login from "./components/pages/login.jsx";
 import Footer from "./components/UI/Footer.jsx";
 import { useSelector } from "react-redux";
