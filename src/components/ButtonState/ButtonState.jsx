@@ -23,8 +23,8 @@ function ButtonSt({ selectedCategory }) {
       setLoading(true); // flag loading
       try {
         const [prodRes, catRes] = await Promise.all([ // product result n category result ask two promise at same time (wait once time)
-          // axios.get("https://dummyjson.com/products"), //product
-          axios.get("http://localhost:3000/api/products"), //product
+          axios.get("https://dummyjson.com/products"), //product
+          // axios.get("http://localhost:3000/api/products"), //product
           axios.get("https://dummyjson.com/products/category-list") // category
         ]);
         setItems(prodRes.data.products); // put product result in set item
@@ -75,8 +75,8 @@ function ButtonSt({ selectedCategory }) {
   const resetProducts = async () => { // get all product
     setLoading(true); // flag reload true
     try {
-      // const res = await axios.get("https://dummyjson.com/products"); //get all product
-      const res = await axios.get("http://localhost:3000/api/products"); //get all product
+      const res = await axios.get("https://dummyjson.com/products"); //get all product
+      // const res = await axios.get("http://localhost:3000/api/products"); //get all product
       setItems(res.data.products); // put all product
     } catch (err) {
       console.error(err); // display error
