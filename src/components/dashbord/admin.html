@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Dashboard - Claudy Admin</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Chart.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/dark.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body id="dark">
+    <!-- Top Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-sm text-light bg-basic fixed-top border-top"
+    >
+      <a class="navbar-brand" href="#">Claudy</a>
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Dropdown</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+            </div>
+          </li>
+
+          <!-- Messages -->
+          <li class="nav-item btn-group dropleft">
+            <a
+              class="nav-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-label="Messages"
+            >
+              <i class="fa fa-comments" aria-hidden="true"></i>
+              <sup class="badge badge-pill badge-danger">20</sup>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+
+          <!-- Notifications -->
+          <li class="nav-item btn-group dropleft nofications">
+            <a
+              class="nav-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-label="Notifications"
+            >
+              <i class="fa fa-bell" aria-hidden="true"></i>
+              <sup class="badge badge-pill badge-danger">99+</sup>
+            </a>
+            <div class="dropdown-menu">
+              <h4 class="dropdown-item mt-0 dropdown-title">
+                Nouvelles notifications
+              </h4>
+              <a class="dropdown-item" href="#">
+                <img src="images/default-avatar.png" alt="User avatar" />
+                <span>Claudy vient de se désabonner</span><br />
+                <span class="text-mutee">A l'instant</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <img src="images/avataaars.png" alt="User avatar" />
+                <span>Jeanne a mentionné votre nom</span>
+                <br />
+                <span class="text-mutee">Il y a 30min.</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <img src="images/anime3.png" alt="User avatar" />
+                <span>John Doe a signalé un problème</span> <br />
+                <span class="text-mutee">Il y a 2h.</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <center>
+                <a class="dropdown-item" href="#"
+                  ><button type="button" class="btn btn-info">
+                    Toutes les nofifications
+                  </button></a
+                >
+              </center>
+            </div>
+          </li>
+
+          <!-- Shopping Cart -->
+          <li class="nav-item btn-group dropleft">
+            <a
+              class="nav-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-label="Shopping Cart"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <sup class="badge badge-pill badge-danger">91</sup>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+
+          <!-- Calendar -->
+          <li class="nav-item btn-group dropleft">
+            <a
+              class="nav-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-label="Calendar"
+            >
+              <i class="fas fa-calendar-alt"></i>
+              <span class="ml-2">Calendar</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+
+          <!-- User Profile -->
+          <li class="nav-item btn-group dropleft">
+            <a
+              class="nav-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-label="User Profile"
+            >
+              <img
+                src="images/anime6.png"
+                alt="User profile"
+                class="avatar rounded-circle mx-auto d-block"
+              />
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+
+          <!-- Settings Menu -->
+          <li class="nav-item btn-group dropleft">
+            <a
+              class="nav-link"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-label="Settings"
+            >
+              <i class="fas fa-ellipsis-v"></i>
+            </a>
+            <div class="dropdown-menu">
+              <div class="dropdown-item">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="darkMode"
+                      id="darkMode"
+                      value="checkedValue"
+                    />
+                    <span class="darkMode">Mode Sombre</span>
+                  </label>
+                </div>
+              </div>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Wrapper -->
+    <div class="wrapper">
+      <!-- Sidebar Menu -->
+      <div class="sideMenu">
+        <div class="sidebar">
+          <ul class="nav justify-content-center flex-column">
+            <li class="nav-item">
+              <a class="nav-link active dropBtn" href="#">
+                <span class="angle"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i
+                ></span>
+                <i class="fa fa-qrcode" aria-hidden="true"></i>
+                <span>Dashboard</span>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">Like ours eeh...</a>
+                <a href="#">Like oqojo ..</a>
+                <a href="#">Like jsgss ..</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="content">
+        <!-- Top Task Bar -->
+        <div class="task-bar top-navbar">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Acceuil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Action</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Another link</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+
+            <li class="ml-auto nav-item">
+              <form class="form-inline my-2 my-lg-0 pr-4">
+                <div class="input-group bg-mi-transparent border-rad-normal">
+                  <label for="searchInput" class="sr-only">Search</label>
+                  <input
+                    type="text"
+                    id="searchInput"
+                    class="form-control border-left-normal bg-mi-transparent border-none"
+                    placeholder="Search..."
+                    aria-label="Search"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      type="submit"
+                      class="input-group-text bg-transparent border-none"
+                      aria-label="Submit search"
+                    >
+                      <i class="fas fa-search text-light"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Main Content Container -->
+        <div class="container mt-4">
+          <!-- Add New Button -->
+          <button
+            type="button"
+            class="btn btn-success mb-3"
+            data-toggle="modal"
+            data-target="#addItemModal"
+          >
+            ➕ Add New Item
+          </button>
+
+          <!-- Data Table -->
+            <table class="table table-dark table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Image</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Brand</th>
+                  <th scope="col">SKU</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Discount %</th>
+                  <th scope="col">Final Price</th>
+                  <th scope="col">Rating</th>
+                  <th scope="col">Stock</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Weight (g)</th>
+                  <th scope="col">Dimensions (W×H×D)</th>
+                  <th scope="col">Min Order Qty</th>
+                  <th scope="col">Warranty</th>
+                  <th scope="col">Shipping Info</th>
+                  <th scope="col">Return Policy</th>
+                  <th scope="col">Barcode</th>
+                  <th scope="col">Tags</th>
+                  <th scope="col">Images Count</th>
+                  <th scope="col">Reviews Count</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="productsTableBody">
+              </tbody>
+            </table>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/Chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <!-- REPLACE YOUR SCRIPT SECTION WITH THIS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  console.log("🚀 Script loaded!");
+  
+  const tableBody = document.getElementById("productsTableBody");
+  const loading = document.getElementById("loading");
+  const errorMessage = document.getElementById("errorMessage");
+
+  console.log("📌 Elements found:", {
+    tableBody: !!tableBody,
+    loading: !!loading,
+    errorMessage: !!errorMessage
+  });
+
+  // Wait for DOM to be ready
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("📄 DOM loaded, starting fetch...");
+    loadProducts();
+  });
+
+  function loadProducts() {
+    console.log("🔄 loadProducts() called");
+    
+    // Show loading
+    if (loading) {
+      loading.style.display = 'block';
+      console.log("✅ Loading spinner shown");
+    }
+    
+    if (errorMessage) {
+      errorMessage.style.display = 'none';
+    }
+    
+    if (tableBody) {
+      tableBody.innerHTML = '<tr><td colspan="24" class="text-center">⏳ Fetching data...</td></tr>';
+    }
+
+    console.log("🌐 Fetching from http://localhost:3000/api/products");
+
+    fetch("http://localhost:3000/api/products")
+      .then(res => {
+        console.log("📡 Response received:", res.status, res.statusText);
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then(data => {
+        console.log("📦 Data received:", data);
+        console.log("📊 Data type:", typeof data);
+        console.log("🔢 Has products?", !!data.products);
+        
+        // Extract products array
+        const products = data.products || [];
+        
+        console.log("✅ Products array length:", products.length);
+        console.log("🔍 First product:", products[0]);
+        
+        // Hide loading
+        if (loading) {
+          loading.style.display = 'none';
+          console.log("✅ Loading hidden");
+        }
+
+        if (products.length === 0) {
+          tableBody.innerHTML = '<tr><td colspan="24" class="text-center text-warning">⚠️ No products found</td></tr>';
+          console.log("⚠️ No products in array");
+          return;
+        }
+
+        // Clear table
+        tableBody.innerHTML = "";
+        console.log("🧹 Table cleared");
+
+        // Populate table
+        let rowCount = 0;
+        products.forEach((product, index) => {
+          try {
+            // Convert prices
+            const price = parseFloat(product.price);
+            const discount = parseFloat(product.discountPercentage);
+            const finalPrice = price - (price * discount / 100);
+
+            // Get dimensions
+            const dimensions = product.dimensions 
+              ? `${product.dimensions.width} × ${product.dimensions.height} × ${product.dimensions.depth}`
+              : "-";
+
+            // Get tags
+            const tags = product.tags && product.tags.length > 0 
+              ? product.tags.join(", ") 
+              : "-";
+
+            // Get counts
+            const imagesCount = product.images ? product.images.length : 0;
+            const reviewsCount = product.reviews ? product.reviews.length : 0;
+
+            const row = `
+              <tr>
+                <td>${index + 1}</td>
+                <td>
+                  <img src="${product.thumbnail || 'https://via.placeholder.com/50'}" 
+                       width="50" height="50" 
+                       style="object-fit:cover; border-radius: 4px;" 
+                       alt="${product.title}"
+                       onerror="this.src='https://via.placeholder.com/50'"/>
+                </td>
+                <td><strong>${product.title}</strong></td>
+                <td class="text-truncate" style="max-width:250px" title="${product.description}">
+                  ${product.description}
+                </td>
+                <td><span class="badge badge-info">${product.category}</span></td>
+                <td>${product.brand || "-"}</td>
+                <td><code>${product.sku}</code></td>
+                <td>$${price.toFixed(2)}</td>
+                <td><span class="badge badge-warning">${discount}%</span></td>
+                <td><strong>$${finalPrice.toFixed(2)}</strong></td>
+                <td>⭐ ${product.rating}</td>
+                <td><span class="badge ${product.stock > 50 ? 'badge-success' : product.stock > 0 ? 'badge-warning' : 'badge-danger'}">${product.stock}</span></td>
+                <td>
+                  <span class="badge ${product.stock > 0 ? "badge-success" : "badge-danger"}">
+                    ${product.availabilityStatus}
+                  </span>
+                </td>
+                <td>${product.weight}g</td>
+                <td>${dimensions}</td>
+                <td>${product.minimumOrderQuantity}</td>
+                <td class="text-truncate" style="max-width:150px" title="${product.warrantyInformation}">${product.warrantyInformation}</td>
+                <td class="text-truncate" style="max-width:150px" title="${product.shippingInformation}">${product.shippingInformation}</td>
+                <td class="text-truncate" style="max-width:150px" title="${product.returnPolicy}">${product.returnPolicy}</td>
+                <td><small>${product.meta?.barcode || "-"}</small></td>
+                <td class="text-truncate" style="max-width:150px" title="${tags}">${tags}</td>
+                <td>${imagesCount}</td>
+                <td>${reviewsCount}</td>
+                <td style="white-space: nowrap;">
+                  <button class="btn btn-sm btn-primary" onclick="viewProduct(${product.id})" title="View Details">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                  <button class="btn btn-sm btn-warning" onclick="editProduct(${product.id})" title="Edit">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button class="btn btn-sm btn-danger" onclick="deleteProduct(${product.id})" title="Delete">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+            `;
+
+            tableBody.insertAdjacentHTML("beforeend", row);
+            rowCount++;
+            
+            if (index === 0) {
+              console.log("✅ First row added successfully");
+            }
+          } catch (err) {
+            console.error(`❌ Error adding product ${index}:`, err);
+          }
+        });
+
+        console.log(`🎉 SUCCESS! Table populated with ${rowCount} products!`);
+      })
+      .catch(err => {
+        console.error("❌ FETCH ERROR:", err);
+        console.error("❌ Error details:", err.message);
+        
+        if (loading) {
+          loading.style.display = 'none';
+        }
+        
+        if (errorMessage) {
+          errorMessage.style.display = 'block';
+          errorMessage.textContent = `Error: ${err.message}. Make sure the server is running on http://localhost:3000`;
+        }
+        
+        if (tableBody) {
+          tableBody.innerHTML = `<tr><td colspan="24" class="text-center text-danger">
+            ❌ Failed to load products<br>
+            Error: ${err.message}<br>
+            Check console for details
+          </td></tr>`;
+        }
+      });
+  }
+
+  function viewProduct(id) {
+    window.open(`http://localhost:3000/api/products/${id}`, '_blank');
+  }
+
+  function editProduct(id) {
+    alert(`Edit product #${id} - This feature needs to be implemented`);
+  }
+
+  function deleteProduct(id) {
+    if (confirm(`Are you sure you want to delete product #${id}?`)) {
+      alert(`Delete product #${id} - This feature needs to be implemented in the backend`);
+    }
+  }
+</script>
+  </body>
+</html>

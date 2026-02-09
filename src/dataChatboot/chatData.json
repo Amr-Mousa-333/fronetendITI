@@ -1,0 +1,12 @@
+[
+  {
+    "category": "greeting",
+    "keywords": ["hello", "hi", "hey"],
+    "response": "Hello 👋 How can I help you today?"
+  },
+  {
+    "category": "owner",
+    "keywords": ["who made you", "who created you", "your creator"],
+    "response": "I was created by Amr, a Front-end developer."
+  }
+]

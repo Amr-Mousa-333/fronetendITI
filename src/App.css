@@ -1,0 +1,80 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.light-mode {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --card-bg: #f8f9fa;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: 0.3s all ease-in-out;
+}
+
+.card {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid #444;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+#root {
+  width: 100%;
+  max-width: 100% !important;
+  text-align: left;
+}
+
+.hover-link:hover {
+  color: #0dcaf0 !important;
+  transition: 0.3s;
+  padding-left: 5px;
+}
+
+
+.floating-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 2000;}
+
+.floating-container .btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.floating-container .btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-chatbot {
+  width: 60px !important;
+  height: 60px !important;
+}
